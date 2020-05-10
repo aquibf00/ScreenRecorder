@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButton"
+        android:textOff="Record"
+       android:layout_alignParentLeft="true"
+        android:textOn="Stop"
+        />
+<!--        android:layout_alignParentB="true"-->
+
+    <VideoView
+        android:layout_above="@+id/toggleButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:id="@+id/videoView"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
